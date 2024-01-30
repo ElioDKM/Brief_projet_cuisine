@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+
+    <link rel="stylesheet" href="/Assets/CSS/inscription.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <header>
+        <div class="header__content mw-1320" >
+          <nav> 
+            <a href="/index.html"><img id="logo" src="/Assets/Image/logo.svg" alt="logo du site" /></a>
+            <a class="Nav__link" href="/index.html">Acceuil</a>
+            <div class="Nav__dropdown">
+              <a class="Nav__dropbtn" href="#">Recettes <img class="Nav__dropArrow" src="/Assets/Image/arrow-drop-down-line.svg" alt=""></a>
+              <div class="Nav__dropdown-content">
+                <a href="#">Toutes les recettes</a>
+                <a href="#">Viandes</a>
+                <a href="#">Poissons</a>
+                <a href="#">Veggies</a>
+              </div>
+            </div>
+              <a class="Nav__link" href="#">Tendances</a>
+          </nav>
+          <div class="nav-right">
+            <div>
+              <input class="searchBar" type="text" placeholder="Votre recherche" />
+              <img class="search-logo" src="/Assets/Image/search-solid-white.svg" alt="search icon"/>
+            </div>
+            <div>
+              <a href="/inscription.html"><img class="nav-right__user-icon" src="/Assets/Image/user-solid.svg" alt="icon user"></a>
+              
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Création du compte</h1>
+            <div class="form__container">
+                <form action="#">
+                    <div>
+                        <label class="form__input-name" for="prenom"><b>Prénom</b></label>
+                        <input class="form__input" type="text" placeholder="Saisir prénom" name="prenom" id="prenom" required>
+                    </div>
+                    <div>
+                        <label class="form__input-name" for="nom"><b>Nom</b></label>
+                        <input class="form__input" type="text" placeholder="Saisir nom" name="nom" id="nom" required>
+                    </div>
+                    <div>
+                        <label class="form__input-name" for="email"><b>Email</b></label>
+                        <input class="form__input" type="text" placeholder="Saisir Email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label class="form__input-name" for="tel"><b>Numéro</b></label>
+                        <input class="form__input" type="text" placeholder="Saisir numéro" name="tel" id="tel" required>
+                    </div>
+                    <div class="form__input__psw-contener">
+                        <div>
+                            <label class="form__input-name" for="psw"><b>Mot de passe</b></label>
+                            <input class="form__input" type="password" placeholder="Saisir mot de passe" name="psw" id="psw" required>
+                        </div>
+                        
+                        <div>
+                            <label class="form__input-name" for="psw-repeat"><b>Confirmer mot de passe</b></label>
+                            <input class="form__input" type="password" placeholder="Mot de passe" name="psw-repeat" id="psw-repeat" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="registerbtn">Register</button>                
+                </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

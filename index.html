@@ -6,33 +6,35 @@
     <title>Let's Cook</title>
     <link rel="stylesheet" href="/Assets/CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="header__content" >
-        <nav>
-          <img id="logo" src="/Assets/Image/logo.svg" alt="logo du site" />
-            <a class="Nav__link" href="#">Acceuil</a>
-            <div class="Nav__dropdown">
-              <a class="Nav__dropbtn" href="#">Recettes <img class="Nav__dropArrow" src="/Assets/Image/arrow-drop-down-line.svg" alt=""></a>
-              <div class="Nav__dropdown-content">
-                <a href="#">Toutes les recettes</a>
-                <a href="#">Viandes</a>
-                <a href="#">Poissons</a>
-                <a href="#">Veggies</a>
-              </div>
+      <div class="header__content mw-1320" >
+        <nav> 
+          <a href="/index.html"><img id="logo" src="/Assets/Image/logo.svg" alt="logo du site" /></a>
+          <a class="Nav__link" href="/index.html">Acceuil</a>
+          <div class="Nav__dropdown">
+            <a class="Nav__dropbtn" href="#">Recettes <img class="Nav__dropArrow" src="/Assets/Image/arrow-drop-down-line.svg" alt=""></a>
+            <div class="Nav__dropdown-content">
+              <a href="#">Toutes les recettes</a>
+              <a href="#">Viandes</a>
+              <a href="#">Poissons</a>
+              <a href="#">Veggies</a>
             </div>
+          </div>
             <a class="Nav__link" href="#">Tendances</a>
         </nav>
-        <div>
-          <input class="searchBar" type="text" placeholder="Votre recherche" />
-          <img
-            class="search-logo"
-            src="/Assets/Image/search-solid-white.svg"
-            alt=""
-          />
+        <div class="nav-right">
+          <div>
+            <input class="searchBar" type="text" placeholder="Votre recherche" />
+            <img class="search-logo" src="/Assets/Image/search-solid-white.svg" alt="search icon"/>
+          </div>
+          <div>
+            <a href="/inscription.html"><img class="nav-right__user-icon" src="/Assets/Image/user-solid.svg" alt="icon user"></a>
+            
+          </div>
         </div>
       </div>
     </header>
@@ -40,7 +42,7 @@
       <section>
         <h1>Toutes les recettes</h1>
 
-        <div class="article__contener">
+        <div class="article__contener mw-1320">
           <article>
             <div class="article__badge-contener">
               <p class="Article__badge">Viande</p> 

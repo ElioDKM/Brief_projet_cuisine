@@ -20,6 +20,16 @@
         font-size: 22px;
     }
 
+    /* sizing */
+        .mw-1320 {
+            max-width: 1320px;
+        }
+
+    /* font style */
+        .fs-comfortaa {font-family: 'Comfortaa', cursive;}
+        .fs-roboto {font-family: 'Roboto', sans-serif;}
+
+
 /* Style header */
 
     header {
@@ -31,7 +41,6 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 1320px;
         margin: auto;
     }
     
@@ -60,22 +69,38 @@
             margin: -5px;
         }
 
-        nav a:hover {background-color: #421f0f;}
+        .Nav__link:hover {background-color: #421f0f;}
 
-        .searchBar {
-            border-radius: 15px;
-            padding-left: 15px;
-            width: 200px;
-            height: 20px;
-            transition: 0.5s;
+    /* Style nav left */
+        .nav-right {
+            display: flex;
+            justify-content: space-between;
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 270px;
         }
-    
-        .search-logo {width: 10px;}
         
-        .searchBar:hover {
-            width: 400px;
-            height: 25px;
-        }
+        /* Style searchbar */
+            .searchBar {
+                border-radius: 15px;
+                padding-left: 15px;
+                width: 200px;
+                height: 20px;
+                transition: 0.5s;
+            }
+        
+            .search-logo {width: 10px;}
+            
+            /* .searchBar:hover {
+                width: 400px;
+                height: 25px;
+            } */
+
+        /* Style user icon */
+            .nav-right__user-icon {
+                width: 20px;
+                margin: 0px 5px;
+            }
 
     /* Style dropdown menu */
         .Nav__dropdown {
@@ -118,7 +143,7 @@
         }
         .Nav__dropdown:hover .Nav__dropdown-content {display: block;}
 
-        .NAv__dropdown:hover {background-color: #421f0f;}
+        .Nav__dropdown:hover {background-color: #421f0f;}
 
 /* Style main */
     section {
@@ -132,7 +157,6 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        max-width: 1320px;
     }
 
     /* Style article card */
