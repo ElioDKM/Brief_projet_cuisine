@@ -26,19 +26,15 @@
         background-color: #542913;
         padding: 10px;
     }
-    .headerContent {
+    .header__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 1050px;
+        max-width: 1320px;
         margin: auto;
     }
-
-    .searchlogo {
-        width: 10px;
-    }
-
+    
     #logo {
         height: 2.2em;
         margin-right: 5px;
@@ -51,7 +47,7 @@
     
     /* Style link */
 
-        .linkNav {
+        .Nav__link {
             color: white;
             padding: 14px;
             font-size: 14px;
@@ -59,35 +55,43 @@
             border-radius: 10px;
         }
 
-        .dropArrow {
+        .Nav__dropArrow {
             width: 20px;
             margin: -5px;
         }
 
+        nav a:hover {background-color: #421f0f;}
+
         .searchBar {
             border-radius: 15px;
             padding-left: 15px;
+            width: 200px;
+            height: 20px;
+            transition: 0.5s;
         }
-
-        nav a:hover {
-            background-color: #421f0f;
+    
+        .search-logo {width: 10px;}
+        
+        .searchBar:hover {
+            width: 400px;
+            height: 25px;
         }
 
     /* Style dropdown menu */
-        .dropdown {
+        .Nav__dropdown {
             position: relative;
             display: inline-block;
             padding: 10.5px 14px;
             border-radius: 10px;
         }
 
-        .dropbtn {
+        .Nav__dropbtn {
             font-size: 14px;
             color: white;
             text-decoration : none;
         }
 
-        .dropdown-content {
+        .Nav__dropdown-content {
             display: none;
             position: absolute;
             background-color: #2a6914;
@@ -95,9 +99,11 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
+            left: 0;
+            top: 45px;
           }
 
-          .dropdown-content a {
+          .Nav__dropdown-content a {
             color: rgb(255, 255, 255);
             font-size: 14px;
             padding: 12px 16px;
@@ -106,13 +112,13 @@
             margin: 0;
           }
 
-        .dropdown-content a:hover {
+        .Nav__dropdown-content a:hover {
             background-color: #245a11;
             border-radius: 10px;
         }
-        .dropdown:hover .dropdown-content {display: block;}
+        .Nav__dropdown:hover .Nav__dropdown-content {display: block;}
 
-        .dropdown:hover {background-color: #421f0f;}
+        .NAv__dropdown:hover {background-color: #421f0f;}
 
 /* Style main */
     section {
@@ -122,27 +128,30 @@
     }
 
 
-    .artContener {
+    .article__contener {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        max-width: 1200px;
+        max-width: 1320px;
     }
 
     /* Style article card */
-        .imgArticle {
-            width: 100%;
-            border-radius: 5px 5px 0px 0px;
-        }
-
         article {
-            width: 300px;
+            flex-basis: 400px;
+            flex-shrink: 1;
+            flex-grow: 1;
             border-radius: 5px;
             box-shadow: 2px 2px 4px #9d9d9d;
             margin: 10px;
         }
+        
+        .article__img {
+            width: 100%;
+            border-radius: 5px 5px 0px 0px;
+            transition: .5s ease;
+        }
 
-        .btnArticle {
+        .Article__badge {
             background-color: #2a6914;
             color: white;
             position: absolute;
@@ -151,37 +160,49 @@
             font-weight: bold;
             margin: 10px;
             padding: 3px 7px;
+            z-index: 1;
         }
 
-        .btnContener {
+        .article__badge-contener {
             display: flex;
             justify-content: flex-end;
         }
 
-        .star {
-            width: 6%;
-            color: #2a6914;
-        }
+        .star {width: 20px;}
 
-        .note {
+        .article__note {
             display: flex;
             margin: 5px 0px;
         }
 
-        .articleTXT {
-            padding: 5px 10px;
-        }
+        .article__txt {padding: 5px 10px;}
 
-        .linkMore a {
-            color: #2a6914;
-        }
+        .article__linkMore a {color: #2a6914;}
 
-        .linkMore {
-            text-align: end;
-        }
+        .article__linkMore {text-align: end;}
+
+        /* Style hover img */
+            .article__hover-icon {
+                width: 30px;
+                position: absolute;
+                opacity: 0;
+                transition: .5s ease;
+            }
+
+            .article__hover-contener {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .article__hover-contener:hover .article__hover-icon {opacity: 1;}
+              
+            .article__hover-contener:hover .article__img {opacity: 0.6;}
+
+            .article__hover-contener:hover {cursor: pointer;}
 
 /* Style footer */
-    .imgFooter {
+    .footer__img {
         background-image: url(/Assets/Image/cooking.svg);
         height: 20vw;
         background-size: 100%;
@@ -190,14 +211,14 @@
         margin-bottom: -4px;
     }
 
-    .footerPart1,
-    .footerPart2,
-    .footerPart3 {
+    .footer__Part1,
+    .footer__Part2,
+    .footer__Part3 {
         width: 270px;
         margin: 15px 0;
     }
 
-    .footerInfo {
+    .footer__Info {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -210,42 +231,34 @@
     }
 
     /* Style footer Part1 */
-        .footerPart1 a {
+        .footer__Part1 a {
             color: white;
             font-size: 12px;
         }
     
     /* Style footer Part2 */
-        .footerPart2 {
-            text-align: center;
-        }
+        .footer__Part2 {text-align: center;}
 
-        .logoMedia {
-            width: 10%;
-        }
+        .footer__social-icon {width: 10%;}
 
     /* Style footer Part3 */
-        #inputemail {
+        #input__email {
             width: 100%;
             border-radius: 15px;
         }
 
-        .txtemail {
-            font-size: 12px;
-        }
+        .input__name {font-size: 12px;}
 
-        .container {
-            font-size: 12px;
-        }
+        .footer__checkmark-container {font-size: 12px;}
 
     /* Style footer end */
-    .footerEnd {
+    .footer__End {
         background-color: #542913;
         padding: 1em;
         border-top: 1px solid rgba(165, 165, 165, 0.558);
     }
 
-    .footerEnd p {
+    .footer__End p {
         color: white;
         text-align: center;
     }

@@ -11,25 +11,25 @@
   </head>
   <body>
     <header>
-      <div class="headerContent" >
+      <div class="header__content" >
         <nav>
           <img id="logo" src="/Assets/Image/logo.svg" alt="logo du site" />
-            <a class="linkNav" href="#">Acceuil</a>
-            <div class="dropdown">
-              <a class="dropbtn" href="#">Recettes <img class="dropArrow" src="/Assets/Image/arrow-drop-down-line.svg" alt=""></a>
-              <div class="dropdown-content">
+            <a class="Nav__link" href="#">Acceuil</a>
+            <div class="Nav__dropdown">
+              <a class="Nav__dropbtn" href="#">Recettes <img class="Nav__dropArrow" src="/Assets/Image/arrow-drop-down-line.svg" alt=""></a>
+              <div class="Nav__dropdown-content">
                 <a href="#">Toutes les recettes</a>
                 <a href="#">Viandes</a>
                 <a href="#">Poissons</a>
                 <a href="#">Veggies</a>
               </div>
             </div>
-            <a class="linkNav" href="#">Tendances</a>
+            <a class="Nav__link" href="#">Tendances</a>
         </nav>
         <div>
           <input class="searchBar" type="text" placeholder="Votre recherche" />
           <img
-            class="searchlogo"
+            class="search-logo"
             src="/Assets/Image/search-solid-white.svg"
             alt=""
           />
@@ -40,15 +40,18 @@
       <section>
         <h1>Toutes les recettes</h1>
 
-        <div class="artContener">
+        <div class="article__contener">
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Viande</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Viande</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat1.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat1.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>iure sequi beatae</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -72,19 +75,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Salade</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Salade</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat2.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat2.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>repudiandae sit illum</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -108,19 +114,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Dessert</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Dessert</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat3.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat3.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>consequatur cum ratione</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -144,19 +153,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Pâtes</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Pâtes</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat4.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat4.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>repudiandae occaecati omnis</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -180,19 +192,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Healthy</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Healthy</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat5.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat5.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>natus magnam porro</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -216,19 +231,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Dessert</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Dessert</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat6.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat6.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>suscipit cumque qui</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -252,19 +270,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Poisson</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Poisson</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat7.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat7.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>accusamus est illum</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -288,19 +309,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Salade</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Salade</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat8.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat8.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>praesentium et similique</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -324,19 +348,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Dessert</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Dessert</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat9.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat9.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>esse architecto adipisci</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -360,19 +387,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Viande</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Viande</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat10.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat10.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>autem nesciunt dolores</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -396,19 +426,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Wrap</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Wrap</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat11.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat11.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>tempore voluptatem in</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -432,19 +465,22 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
           </article>
           <article>
-            <div class="btnContener">
-              <p class="btnArticle">Viande</p> 
+            <div class="article__badge-contener">
+              <p class="Article__badge">Viande</p> 
             </div>
-            <img class="imgArticle" src="/Assets/Image/plat12.jpg" alt="" />
-            <div class="articleTXT">
+            <div class="article__hover-contener">
+              <img class="article__hover-icon" src="/Assets/Image/arrow-up-right-from-square-solid.svg" alt="">
+              <img class="article__img" loading="lazy" src="/Assets/Image/plat12.jpg" alt="" />
+            </div>
+            <div class="article__txt">
               <h3>nihil veniam doloribus</h3>
-              <div class="note">
+              <div class="article__note">
                 <p>Difficulté:</p>
                 <img
                   class="star"
@@ -468,7 +504,7 @@
                 et ut eos doloremque. Nemo saepe repudiandae sint fugiat et aut
                 corporis.
               </p>
-              <div class="linkMore">
+              <div class="article__linkMore">
                 <a href="#">En savoir plus</a>
               </div>
             </div>
@@ -477,9 +513,9 @@
       </section>
     </main>
     <footer>
-      <div class="imgFooter"></div>
-      <div class="footerInfo">
-        <div class="footerPart1">
+      <div class="footer__img"></div>
+      <div class="footer__Info">
+        <div class="footer__Part1">
           <ul>
             <li><a href="#">Acceuil</a></li>
             <li><a href="#">Recettes</a></li>
@@ -487,39 +523,39 @@
             <li><a href="#">Politique de confidentialité</a></li>
           </ul>
         </div>
-        <div class="footerPart2">
+        <div class="footer__Part2">
           <p>Suivez-nous</p>
-          <div class="socialIcon">
+          <div class="footer__social">
             <img
-              class="logoMedia"
+              class="footer__social-icon"
               src="/Assets/Image/facebook-box-line.svg"
               alt="logo facebook"
             />
             <img
-              class="logoMedia"
+              class="footer__social-icon"
               src="/Assets/Image/instagram-line.svg"
               alt="logo instagram"
             />
             <img
-              class="logoMedia"
+              class="footer__social-icon"
               src="/Assets/Image/twitter-line.svg"
               alt="logo twitter"
             />
           </div>
         </div>
-        <div class="footerPart3">
+        <div class="footer__Part3">
           <p>Abonnez-vous à notre NewsLetter</p>
-          <label for="email" class="txtemail" >Email :</label>
-          <input type="text" id="inputemail" name="email" />
+          <label for="email" class="input__name" >Email :</label>
+          <input type="text" id="input__email" name="email" />
           <input type="checkbox" />
-          <label class="container">
+          <label class="footer__checkmark-container">
             Sed qui rem voluptatem aut ipsum itaque sequi et Sit aut voluptas
             alias doloribus voluptatem corrupti et ut.
-            <span class="checkmark"></span>
+            <span class="footer__checkmark"></span>
           </label>
         </div>
       </div>
-      <div class="footerEnd">
+      <div class="footer__End">
         <p>© 2024 MODE 88</p>
       </div>
     </footer>
