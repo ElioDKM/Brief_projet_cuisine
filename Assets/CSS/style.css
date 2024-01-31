@@ -20,6 +20,11 @@
         font-size: 22px;
     }
 
+    header {
+        margin-bottom: 20px;
+    }
+    
+
     /* sizing */
         .mw-1320 {
             max-width: 1320px;
@@ -87,6 +92,7 @@
                 width: 200px;
                 height: 20px;
                 transition: 0.5s;
+                margin: 10px;
             }
         
             .search-logo {width: 10px;}
@@ -99,8 +105,17 @@
         /* Style user icon */
             .nav-right__user-icon {
                 width: 20px;
-                margin: 0px 5px;
+                margin: 10px;
             }
+
+            .nav-right__user-icon__contener {
+                border-radius: 10px;
+            }
+    
+            .nav-right__user-icon__contener:hover {
+                background-color: #421f0f;
+            }
+    
 
     /* Style dropdown menu */
         .Nav__dropdown {

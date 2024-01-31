@@ -24,6 +24,10 @@ h3 {
     font-size: 22px;
 }
 
+header {
+    margin-bottom: 20px;
+}
+
 /* sizing */
     .mw-1320 {
         max-width: 1320px;
@@ -81,7 +85,7 @@ nav {
         justify-content: space-between;
         flex-shrink: 1;
         flex-grow: 1;
-        flex-basis: 270px;
+        flex-basis: 300px;
     }
     
     /* Style searchbar */
@@ -91,6 +95,7 @@ nav {
             width: 200px;
             height: 20px;
             transition: 0.5s;
+            margin: 10px;
         }
     
         .search-logo {width: 10px;}
@@ -103,7 +108,15 @@ nav {
     /* Style user icon */
         .nav-right__user-icon {
             width: 20px;
-            margin: 0px 5px;
+            margin: 10px;
+        }
+
+        .nav-right__user-icon__contener {
+            border-radius: 10px;
+        }
+
+        .nav-right__user-icon__contener:hover {
+            background-color: #421f0f;
         }
 
 /* Style dropdown menu */
@@ -151,10 +164,33 @@ nav {
 
 
 /* Style main */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 1320px;
+        margin: auto;
+    }
+
+    .section-form {
+        padding: 10px;
+    }
+
+    .m__img-contener {
+        max-width: 650px;
+        padding: 10px;
+    }
+
+    .m__img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
     .form__container {
         padding: 10px 40px 10px 10px;
         background-color: #542913;
-        max-width: 900px;
+        max-width: 650px;
         margin: auto;
         border-radius: 15px;
     }
@@ -185,3 +221,86 @@ nav {
         flex-basis: 350px;
         margin: 10px;
     }
+
+    /* Style btn */
+        .registerbtn {
+            background-color: #245a11;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+            transition: .2s;
+        }
+
+        .registerbtn:hover {
+            background-color: #2a6914;
+        }
+
+        .form__cnx {
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .form__cnx a {color: #245a11;}
+
+/* Style footer */
+.footer__img {
+    background-image: url(/Assets/Image/cooking.svg);
+    height: 20vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: -4px;
+}
+
+.footer__Part1,
+.footer__Part2,
+.footer__Part3 {
+    width: 270px;
+    margin: 15px 0;
+}
+
+.footer__Info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch;
+    background-color: #542913;
+    color: white;
+    padding: 1em;
+}
+
+/* Style footer Part1 */
+    .footer__Part1 a {
+        color: white;
+        font-size: 12px;
+    }
+
+/* Style footer Part2 */
+    .footer__Part2 {text-align: center;}
+
+    .footer__social-icon {width: 10%;}
+
+/* Style footer Part3 */
+    #input__email {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .input__name {font-size: 12px;}
+
+    .footer__checkmark-container {font-size: 12px;}
+
+/* Style footer end */
+.footer__End {
+    background-color: #542913;
+    padding: 1em;
+    border-top: 1px solid rgba(165, 165, 165, 0.558);
+}
+
+.footer__End p {
+    color: white;
+    text-align: center;
+}

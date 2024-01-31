@@ -32,15 +32,17 @@
               <input class="searchBar" type="text" placeholder="Votre recherche" />
               <img class="search-logo" src="/Assets/Image/search-solid-white.svg" alt="search icon"/>
             </div>
-            <div>
+            <div class="nav-right__user-icon__contener">
               <a href="/inscription.html"><img class="nav-right__user-icon" src="/Assets/Image/user-solid.svg" alt="icon user"></a>
-              
             </div>
           </div>
         </div>
     </header>
     <main>
-        <section>
+        <div class="m__img-contener">
+            <img class="m__img" src="/Assets/Image/bg-inscription.jpg" alt="">
+        </div>
+        <section class="section-form">
             <h1>Création du compte</h1>
             <div class="form__container">
                 <form action="#">
@@ -59,24 +61,69 @@
                     <div>
                         <label class="form__input-name" for="tel"><b>Numéro</b></label>
                         <input class="form__input" type="text" placeholder="Saisir numéro" name="tel" id="tel" required>
+                    </div>                   
+                    <div>
+                        <label class="form__input-name" for="psw"><b>Mot de passe</b></label>
+                        <input class="form__input" type="password" placeholder="Saisir mot de passe" name="psw" id="psw" required>
+                    </div>                       
+                    <div>
+                        <label class="form__input-name" for="psw-repeat"><b>Confirmer mot de passe</b></label>
+                        <input class="form__input" type="password" placeholder="Mot de passe" name="psw-repeat" id="psw-repeat" required>
                     </div>
-                    <div class="form__input__psw-contener">
-                        <div>
-                            <label class="form__input-name" for="psw"><b>Mot de passe</b></label>
-                            <input class="form__input" type="password" placeholder="Saisir mot de passe" name="psw" id="psw" required>
-                        </div>
-                        
-                        <div>
-                            <label class="form__input-name" for="psw-repeat"><b>Confirmer mot de passe</b></label>
-                            <input class="form__input" type="password" placeholder="Mot de passe" name="psw-repeat" id="psw-repeat" required>
-                        </div>
-                    </div>
-                    
-                    <button type="submit" class="registerbtn">Register</button>                
+                    <button type="submit" class="registerbtn">S'enregistrer</button>
+                    <p class="form__cnx">Vous avez déjà un compte ? <a href="#">Connexion</a></p>
                 </form>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer__img"></div>
+        <div class="footer__Info">
+          <div class="footer__Part1">
+            <ul>
+              <li><a href="#">Acceuil</a></li>
+              <li><a href="#">Recettes</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer__Part2">
+            <p>Suivez-nous</p>
+            <div class="footer__social">
+              <img
+                class="footer__social-icon"
+                src="/Assets/Image/facebook-box-line.svg"
+                alt="logo facebook"
+              />
+              <img
+                class="footer__social-icon"
+                src="/Assets/Image/instagram-line.svg"
+                alt="logo instagram"
+              />
+              <img
+                class="footer__social-icon"
+                src="/Assets/Image/twitter-line.svg"
+                alt="logo twitter"
+              />
+            </div>
+          </div>
+          <div class="footer__Part3">
+            <p>Abonnez-vous à notre NewsLetter</p>
+            <label for="email" class="input__name" >Email :</label>
+            <input type="text" id="input__email" name="email" />
+            <input type="checkbox" />
+            <label class="footer__checkmark-container">
+              Sed qui rem voluptatem aut ipsum itaque sequi et Sit aut voluptas
+              alias doloribus voluptatem corrupti et ut.
+              <span class="footer__checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="footer__End">
+          <p>© 2024 MODE 88</p>
+        </div>
+    </footer>
+  
     
 </body>
 </html>
