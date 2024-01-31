@@ -110,6 +110,7 @@
 
             .nav-right__user-icon__contener {
                 border-radius: 10px;
+                padding: 30px 5px 0 5px;
             }
     
             .nav-right__user-icon__contener:hover {
